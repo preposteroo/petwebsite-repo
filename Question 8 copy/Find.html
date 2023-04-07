@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>FurEver Home</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="pet.js"></script>
+        <style>
+            
+            h1 {
+                position: absolute;
+                top:40px;
+                left: 310px;
+                
+            }
+            .info{
+                text-align: center;
+            }
+            .form{
+                position: absolute;
+                top:138px;
+                left:150px;
+            }
+            .kitty{
+                position: absolute;
+                top:1px;
+                left:150px;
+                
+            }
+            
+        
+        </style>
+    </head>
+    
+           <body onload="showTime()">
+        
+        <div class="header">
+            <div id="time"></div>
+            <h3>Adopt Now With</h3>
+            <table class="head">
+                <tr>
+                    <td><h2>FurEver Home</h2></td>
+               <td> <a href="Home.html"><img src="../Images/SpaceBean.png" alt="Space Cat" width=125></a>
+                   </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="side_menu">
+            <ul>
+                <li><a href="Home.html">&#128062; Home</a></li>
+                <li><a href="Browse.html">&#128062; Browse Pets</a></li>
+                <li><a href="Find.html">&#128062; Find a Dog/Cat</a></li>
+                <li><a href="Dogcare.html">&#128062; Dog Care</a></li>
+                <li><a href="Catcare.html">&#128062; Cat Care</a></li>
+                <li><a href="give.html">&#128062; Have a Pet Who Needs A Home?</a></li>
+                <li><a href="contact.html">&#128062; Contact Us!</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <img class="kitty" src="https://www.aylmervet.com/wp-content/uploads/sites/234/2022/03/9-copy.png" alt="Kitty" width="150">
+            <h1>Find Your FurEver Buddy!</h1> 
+            
+            <form id ="findForm" class="form" onsubmit="required()">
+            <fieldset class="survey">
+                <legend class="info">What Kind Of Buddy Are You Looking For?</legend><br>
+                
+                I'm Looking For A:
+                <input type="checkbox" id ="cat" name ="cat" value="Cat">
+                <label for="cat"></label>Cat
+                <input type="checkbox" id ="dog" name ="dog" value="Dog">
+                <label for="dog">Dog</label><br><br>
+                
+               What Kind of Breed? :
+                Dogs  <select id = "dogBreed" name="breeddog">
+                    <option>Does Not Apply</option>
+                    <option>Doesn't Matter</option>
+                    <option>Domestic ShortHair</option>
+                    <option>Domestic LongHair</option>
+                    <option>German Shepherd</option>
+                    <option>Border Collie</option>
+                    <option>Australian Shephard</option>
+                    <option>Dalmatian</option>
+                    <option>Labrador</option>
+                    <option>Golden Retriever</option>
+                </select>
+                
+                Cats 
+                <select id= "catBreed" name="breedcat">
+                    <option>Does Not Apply</option>
+                    <option>Doesn't Matter</option>
+                    <option>Domestic ShortHair</option>
+                    <option>Domestic LongHair</option>
+                    <option>Siamese</option>
+                    <option>British ShortHair</option>
+                    <option>Persian</option>
+                    <option>Maine Coon</option>
+                    <option>Sphynx</option>
+                    <option>Bengal</option>
+                </select><br><br>
+                
+                How Old Should Your Fur Baby Be? <select id= "age" name="age">
+                    <option>Doesn't Matter</option>
+                    <option>Less Than One Year(Baby)</option>
+                    <option>1 to 3 Years Old</option>
+                    <option>4 to 8 Years Old</option>
+                    <option>8 Years Old (Senior)</option>
+                </select> <br><br>
+                
+                Preferred Gender:
+                <input type="checkbox" id="F" name="F" value="Female">
+                <label for="F">Female</label>
+                <input type="checkbox" id="M" name="M" value="Male">
+                <label for="M">Male</label>
+                <input type="checkbox" id="DM" name="Doesn't Matter" value="Doesn't Matter">
+                <label for="DM">Doesn't Matter</label><br><br>
+                
+                Your Fur Baby Should Get Along With (Select All That Apply): 
+                <input type="checkbox" id="kids" name="kids" value="kids">
+                <label for="kids">Kids</label>
+                <input type="checkbox" id="cats" name="cats" value="cats">
+                 <label for="cats">Cats</label>
+                <input type="checkbox" id="dogs" name="dogs" value="dogs">
+                 <label for="dogs">Dogs</label>
+                <input type="checkbox" id="not" name="not" value="not">
+                 <label for="not">Not Important</label><br><br>
+            </fieldset><br><br>
+            
+             <input type = "submit"
+           value = "Submit" >
+    
+            <input type = "reset"
+           value = "Reset" >
+    
+        </form>
+        </div>
+        <div class="footer">
+            <a style="color:white" href="footer.html">Privacy/DisclaimerStatement/Image Credit</a>
+        </div>
+    </body>
+    
+
+</html>
